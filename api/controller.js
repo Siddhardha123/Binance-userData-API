@@ -31,7 +31,6 @@ const systemStatus = (req,res) => {
  
 const getAllCoins = (req,res) => {
     try{
-        params = {'HTTP_CONTENT_LANGUAGE': self.language}
         axios.get(baseUrl+'/sapi/v1/capital/config/getall')
         .then((response)=>{
           console.log(response.data)
